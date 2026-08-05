@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Avenue of Time</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Smooths out the filter application so it doesn't stutter when scrolling fast */
+        #avenue-wrapper {
+            transition: filter 0.1s ease-out;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-50 m-0 p-0 overflow-x-hidden">
+
+    <!-- 
+      We wrap the scrollable content in this div. 
+      Applying the grayscale here allows you to keep a fixed navigation 
+      bar outside of this div later if you want the nav to stay colorful!
+    -->
+    <div id="avenue-wrapper">
+
+        <!-- Placeholder Main Container (300vh makes it 3x the height of the screen to allow scrolling) -->
+        <main
+            class="min-h-[300vh] w-full flex flex-col items-center justify-between py-24 bg-gradient-to-b from-indigo-500 via-rose-400 to-amber-700">
+
+            Top of the Avenue
+            <div class="text-center mt-10">
+                <h1 class="text-6xl md:text-8xl font-black text-white drop-shadow-lg mb-4">The Avenue</h1>
+                <p class="text-2xl text-white font-semibold">21st Century (Vibrant)</p>
+                <div class="mt-8 flex gap-4 justify-center">
+                    <div class="w-32 h-32 bg-blue-400 rounded-lg shadow-xl"></div>
+                    <div class="w-32 h-32 bg-green-400 rounded-lg shadow-xl"></div>
+                    <div class="w-32 h-32 bg-yellow-400 rounded-lg shadow-xl"></div>
+                </div>
+            </div>
+
+            <!-- Middle of the Avenue -->
+            <div class="text-center">
+                <h2 class="text-5xl font-bold text-white drop-shadow-md">The 90s & 80s</h2>
+                <p class="text-xl text-white mt-2">Colors are starting to fade...</p>
+            </div>
+
+            <!-- Bottom of the Avenue -->
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-white drop-shadow-md">The 70s</h2>
+                <p class="text-xl text-white mt-2">Fully Grayscale</p>
+                <div class="mt-8 flex gap-4 justify-center">
+                    <div class="w-32 h-32 bg-blue-400 rounded-lg shadow-xl"></div>
+                    <div class="w-32 h-32 bg-green-400 rounded-lg shadow-xl"></div>
+                    <div class="w-32 h-32 bg-yellow-400 rounded-lg shadow-xl"></div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
