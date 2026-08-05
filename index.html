@@ -28,34 +28,464 @@
         <main
             class="min-h-[300vh] w-full flex flex-col items-center justify-between py-24 bg-gradient-to-b from-indigo-500 via-rose-400 to-amber-700">
 
-            Top of the Avenue
-            <div class="text-center mt-10">
-                <h1 class="text-6xl md:text-8xl font-black text-white drop-shadow-lg mb-4">The Avenue</h1>
-                <p class="text-2xl text-white font-semibold">21st Century (Vibrant)</p>
-                <div class="mt-8 flex gap-4 justify-center">
-                    <div class="w-32 h-32 bg-blue-400 rounded-lg shadow-xl"></div>
-                    <div class="w-32 h-32 bg-green-400 rounded-lg shadow-xl"></div>
-                    <div class="w-32 h-32 bg-yellow-400 rounded-lg shadow-xl"></div>
+            <!-- DECADE SECTION COMPONENT (e.g., 21st Style) -->
+            <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
+
+                <!-- Clickable Era Header (Street Sign Aesthetic) -->
+                <div class="mb-16">
+                    <!-- 
+          The 'group' class allows us to trigger hover effects on child elements.
+          The brutalist shadow effect simulates a physical street sign or plaque.
+        -->
+                    <a href="21st.html"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 border-4 border-gray-900 bg-white transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(17,24,39,1)] hover:shadow-none hover:translate-x-[8px] hover:translate-y-[8px]">
+                        <div class="text-center">
+                            <span
+                                class="block text-xs font-bold tracking-widest text-gray-500 uppercase mb-1 group-hover:text-gray-700">Enter
+                                The</span>
+                            <h2 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">21st
+                                Century
+                                Style</h2>
+                        </div>
+                    </a>
                 </div>
-            </div>
 
-            <!-- Middle of the Avenue -->
-            <div class="text-center">
-                <h2 class="text-5xl font-bold text-white drop-shadow-md">The 90s & 80s</h2>
-                <p class="text-xl text-white mt-2">Colors are starting to fade...</p>
-            </div>
+                <!-- 
+      CSS Grid for exactly 3 cards. 
+      On mobile, it's 1 column. On tablets and desktops (md), it's 3 columns. 
+    -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
 
-            <!-- Bottom of the Avenue -->
-            <div class="text-center mb-20">
-                <h2 class="text-5xl font-bold text-white drop-shadow-md">The 70s</h2>
-                <p class="text-xl text-white mt-2">Fully Grayscale</p>
-                <div class="mt-8 flex gap-4 justify-center">
-                    <div class="w-32 h-32 bg-blue-400 rounded-lg shadow-xl"></div>
-                    <div class="w-32 h-32 bg-green-400 rounded-lg shadow-xl"></div>
-                    <div class="w-32 h-32 bg-yellow-400 rounded-lg shadow-xl"></div>
+                    <!-- Product Card 1 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <!-- Image Area -->
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <!-- Image Placeholder -->
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <!-- Text Content -->
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Oversized Denim Jacket</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Classic vintage fit with distressed
+                                details. A staple of grunge culture and streetwear.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Baggy Cargo Pants</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Utilitarian design meets loose-fitting
+                                comfort. Designed for mobility and aesthetic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Graphic Block Tee</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Heavyweight cotton featuring authentic
+                                retro typography and color blocking.</p>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+            </section>
+            <!-- DECADE SECTION COMPONENT (e.g., 90s Style) -->
+            <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
 
+                <!-- Clickable Era Header (Street Sign Aesthetic) -->
+                <div class="mb-16">
+                    <!-- 
+          The 'group' class allows us to trigger hover effects on child elements.
+          The brutalist shadow effect simulates a physical street sign or plaque.
+        -->
+                    <a href="90s.html"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 border-4 border-gray-900 bg-white transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(17,24,39,1)] hover:shadow-none hover:translate-x-[8px] hover:translate-y-[8px]">
+                        <div class="text-center">
+                            <span
+                                class="block text-xs font-bold tracking-widest text-gray-500 uppercase mb-1 group-hover:text-gray-700">Enter
+                                The</span>
+                            <h2 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">90s
+                                Style</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 
+      CSS Grid for exactly 3 cards. 
+      On mobile, it's 1 column. On tablets and desktops (md), it's 3 columns. 
+    -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+
+                    <!-- Product Card 1 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <!-- Image Area -->
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <!-- Image Placeholder -->
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <!-- Text Content -->
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Oversized Denim Jacket</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Classic vintage fit with distressed
+                                details. A staple of grunge culture and streetwear.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Baggy Cargo Pants</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Utilitarian design meets loose-fitting
+                                comfort. Designed for mobility and aesthetic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Graphic Block Tee</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Heavyweight cotton featuring authentic
+                                retro typography and color blocking.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- DECADE SECTION COMPONENT (e.g., 80s Style) -->
+            <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
+
+                <!-- Clickable Era Header (Street Sign Aesthetic) -->
+                <div class="mb-16">
+                    <!-- 
+          The 'group' class allows us to trigger hover effects on child elements.
+          The brutalist shadow effect simulates a physical street sign or plaque.
+        -->
+                    <a href="80s.html"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 border-4 border-gray-900 bg-white transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(17,24,39,1)] hover:shadow-none hover:translate-x-[8px] hover:translate-y-[8px]">
+                        <div class="text-center">
+                            <span
+                                class="block text-xs font-bold tracking-widest text-gray-500 uppercase mb-1 group-hover:text-gray-700">Enter
+                                The</span>
+                            <h2 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">80s
+                                Style</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 
+      CSS Grid for exactly 3 cards. 
+      On mobile, it's 1 column. On tablets and desktops (md), it's 3 columns. 
+    -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+
+                    <!-- Product Card 1 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <!-- Image Area -->
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <!-- Image Placeholder -->
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <!-- Text Content -->
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Oversized Denim Jacket</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Classic vintage fit with distressed
+                                details. A staple of grunge culture and streetwear.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Baggy Cargo Pants</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Utilitarian design meets loose-fitting
+                                comfort. Designed for mobility and aesthetic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Graphic Block Tee</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Heavyweight cotton featuring authentic
+                                retro typography and color blocking.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- DECADE SECTION COMPONENT (e.g., 700s Style) -->
+            <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
+
+                <!-- Clickable Era Header (Street Sign Aesthetic) -->
+                <div class="mb-16">
+                    <!-- 
+          The 'group' class allows us to trigger hover effects on child elements.
+          The brutalist shadow effect simulates a physical street sign or plaque.
+        -->
+                    <a href="70s.html"
+                        class="group relative inline-flex items-center justify-center px-10 py-5 border-4 border-gray-900 bg-white transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(17,24,39,1)] hover:shadow-none hover:translate-x-[8px] hover:translate-y-[8px]">
+                        <div class="text-center">
+                            <span
+                                class="block text-xs font-bold tracking-widest text-gray-500 uppercase mb-1 group-hover:text-gray-700">Enter
+                                The</span>
+                            <h2 class="text-4xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">70s
+                                Style</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 
+      CSS Grid for exactly 3 cards. 
+      On mobile, it's 1 column. On tablets and desktops (md), it's 3 columns. 
+    -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+
+                    <!-- Product Card 1 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <!-- Image Area -->
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <!-- Hover Overlay -->
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <!-- Image Placeholder -->
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <!-- Text Content -->
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Oversized Denim Jacket</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Classic vintage fit with distressed
+                                details. A staple of grunge culture and streetwear.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Baggy Cargo Pants</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Utilitarian design meets loose-fitting
+                                comfort. Designed for mobility and aesthetic.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div
+                        class="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer border border-gray-100">
+                        <div class="aspect-[3/4] w-full bg-gray-200 relative overflow-hidden">
+                            <div
+                                class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            </div>
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-700">
+                                <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span class="text-sm font-medium">Garment Image</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                                Graphic Block Tee</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Heavyweight cotton featuring authentic
+                                retro typography and color blocking.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </main>
     </div>
 
