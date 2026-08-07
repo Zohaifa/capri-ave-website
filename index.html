@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Avenue of Time</title>
+    <title>Capri Ave LLC | The Avenue of Time</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -27,6 +27,34 @@
         <!-- Placeholder Main Container (300vh makes it 3x the height of the screen to allow scrolling) -->
         <main
             class="min-h-[300vh] w-full flex flex-col items-center justify-between py-24 bg-gradient-to-b from-indigo-500 via-rose-400 to-amber-700">
+
+            <!-- HERO BANNER -->
+            <section
+                class="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+                <!-- 
+      Optional background image placeholder - right now it's transparent 
+      so your vibrant wrapper gradient from Phase 1 shines through.
+    -->
+                <div class="z-10 max-w-4xl mx-auto">
+                    <h1
+                        class="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter drop-shadow-xl mb-6">
+                        Capri Ave LLC
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white/90 font-medium tracking-wide mb-10 max-w-2xl mx-auto">
+                        Fashion is a timeline. Scroll down to walk backward through the eras of style.
+                    </p>
+
+                    <!-- Bouncing Scroll Indicator -->
+                    <div class="animate-bounce flex flex-col items-center text-white mt-12">
+                        <span class="text-sm font-bold uppercase tracking-widest mb-2">Walk with us</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
 
             <!-- DECADE SECTION COMPONENT (e.g., 21st Style) -->
             <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
@@ -372,8 +400,8 @@
                 </div>
             </section>
 
-            <!-- DECADE SECTION COMPONENT (e.g., 700s Style) -->
-            <section class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
+            <!-- DECADE SECTION COMPONENT (e.g., 70s Style) -->
+            <section id="target-grayscale" class="w-full max-w-7xl mx-auto px-4 py-24 flex flex-col items-center">
 
                 <!-- Clickable Era Header (Street Sign Aesthetic) -->
                 <div class="mb-16">
@@ -486,6 +514,96 @@
 
                 </div>
             </section>
+
+            <!-- ABOUT US SECTION -->
+            <section class="w-full bg-white text-gray-900 py-24 px-4">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <!-- Abstract Image Placeholder -->
+                    <div
+                        class="aspect-square w-full bg-gray-100 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-gray-200 to-gray-50"></div>
+                        <span class="text-gray-400 font-medium tracking-widest uppercase z-10">Brand Imagery</span>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="flex flex-col justify-center">
+                        <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6">Our Concept</h2>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            We believe that clothing is more than fabric—it's a reflection of the times. Every era has a
+                            distinct voice, shape, and attitude.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            The Avenue is a curated collection that doesn't just sell garments; it tells the story of
+                            fashion's evolution. As you move through our collections, you step out of the modern day and
+                            into the iconic aesthetics that defined the past decades.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT US SECTION -->
+            <section class="w-full bg-gray-50 py-24 px-4 border-t border-gray-200">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter text-gray-900 mb-4">Get in
+                        Touch</h2>
+                    <p class="text-gray-600 mb-12">Have a question about a piece? Looking to purchase? Drop us a line
+                        below.</p>
+
+                    <!-- Minimalist Fashion Form -->
+                    <form action="#" method="POST" class="space-y-8 text-left">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <label for="name"
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full bg-transparent border-b-2 border-gray-300 py-2 text-gray-900 focus:outline-none focus:border-gray-900 transition-colors"
+                                    placeholder="Jane Doe" required>
+                            </div>
+                            <div>
+                                <label for="email"
+                                    class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full bg-transparent border-b-2 border-gray-300 py-2 text-gray-900 focus:outline-none focus:border-gray-900 transition-colors"
+                                    placeholder="jane@example.com" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full bg-transparent border-b-2 border-gray-300 py-2 text-gray-900 focus:outline-none focus:border-gray-900 transition-colors resize-none"
+                                placeholder="I'm interested in the 90s oversized denim jacket..." required></textarea>
+                        </div>
+                        <div class="text-center pt-4">
+                            <button type="submit"
+                                class="inline-block bg-gray-900 text-white px-12 py-4 font-bold uppercase tracking-widest hover:bg-black hover:-translate-y-1 transition-all duration-300 shadow-lg">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="w-full bg-black text-white py-12 px-4 text-center">
+                <div class="max-w-7xl mx-auto flex flex-col items-center">
+                    <h3 class="text-2xl font-black uppercase tracking-tighter mb-6">The Avenue</h3>
+
+                    <!-- Social Links Placeholder -->
+                    <div class="flex space-x-6 mb-8">
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition-colors uppercase text-xs font-bold tracking-widest">Instagram</a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition-colors uppercase text-xs font-bold tracking-widest">Twitter</a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition-colors uppercase text-xs font-bold tracking-widest">Pinterest</a>
+                    </div>
+
+                    <p class="text-gray-500 text-sm">
+                        &copy; 2026 The Avenue. All rights reserved.
+                    </p>
+                </div>
+            </footer>
         </main>
     </div>
 
